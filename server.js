@@ -6,7 +6,7 @@ const port = 8000;
 app.use(Gun.serve);
 
 const server = app.listen(port, () => {
-  console.log("Listening at: http://localhost://" + port);
+  console.log("Listening at: http://localhost:" + port);
 });
 
 Gun({ web: server });
